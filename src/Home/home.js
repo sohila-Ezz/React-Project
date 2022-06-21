@@ -1,6 +1,6 @@
 import React from "react";
-import { useSelector ,useDispatch } from "react-redux";
-import {changeLanguage} from '../../store/actions/language';
+// import { useSelector ,useDispatch } from "react-redux";
+// import {changeLanguage} from '../../store/actions/language';
 const Home = () => {
   return (
     <div>

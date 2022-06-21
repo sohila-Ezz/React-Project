@@ -7,6 +7,7 @@ import Home from './Home/home';
 import About from './About/about';
 import Contact from './Contact/contact';
 import Movies from './Movies/movies';
+import MovieDetailes from './Movies/movieDetailes';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
   <Route path="/about" exact component={About}/>
   <Route path="/contact" exact component={Contact}/>
   <Route path="/movies" exact component={Movies}/>
+  <Route path="/detailes/:id" exact component={MovieDetailes}/>
   </Switch>
 </Router>
     </>
