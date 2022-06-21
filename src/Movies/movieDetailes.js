@@ -21,9 +21,9 @@ const MovieDetailes = (props) => {
             })
             .catch((err) => console.log(err));
     }, []);
-
   // axiosInstance.post("url",{},{})
   return (
+    <>
     <div className='container'>
     <div className="col" key={Movie.id}>
               <div className="card">
@@ -32,21 +32,22 @@ const MovieDetailes = (props) => {
                   style={{ height: "400px"  }}
                   className="card-img-top"
                   alt="..."/>
-              
+               
                   <h5 className="card-title">{Movie.title}</h5>
                   <p className="card-text me-4"> {Movie.overview}</p>
-            
+              <span className="card-text">{Movie.vote_count}</span>
+                
               </div>
-           
-        
+              </div>
+          <br/>
           <div className='paginate'>
           <button className="btn btn-primary mt-4" onClick={() => redirectToMovies()}>
              Go To Movies
       </button>
       </div>
-        </div>
+        
       </div>
-    
+      </>
   );
 };
 

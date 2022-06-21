@@ -27,6 +27,7 @@ const Movies = () => {
         {Movies.filter(e=>e.title.toLowerCase().includes(Query))
 .map((Movie) => {
           return (
+            
             <div className="col" key={Movie.id}>
               <div className="card">
                 <img
